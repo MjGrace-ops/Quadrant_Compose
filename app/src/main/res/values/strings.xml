@@ -3,4 +3,9 @@
     <string name="Description2">Creates a composable that lays out and draws a given Painter class object.</string>
     <string name="Description1">Displays text and follows the recommended Material Design guidelines.</string>
     <string name="Titre1">Text composable</string>
+    <string name="Titre2">Image composable</string>
+    <string name="Titre3">Row composable</string>
+    <string name="Titre4">Column composable</string>
+    <string name="Description3">A layout composable that places its children in a horizontal sequence.</string>
+    <string name="Description4">A layout composable that places its children in a vertical sequence.</string>
 </resources>

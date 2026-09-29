@@ -3,12 +3,10 @@
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -52,7 +50,7 @@ import com.example.quadrant_compose.ui.theme.Quadrant_ComposeTheme
              )
 
              Quadrant(
-                     titre = "Image composable",
+                     titre = stringResource(R.string.Titre2),
                      description = stringResource(R.string.Description2),
                      backgroundColor = Color(0xFFD0BCFF),
                      modifier = Modifier.weight(1f)
@@ -64,15 +62,15 @@ import com.example.quadrant_compose.ui.theme.Quadrant_ComposeTheme
              modifier = Modifier.weight(1f)
          ) {
              Quadrant(
-                 titre = "Row composable",
-                 description = "A layout composable that places its children in a horizontal sequence.",
+                 titre = stringResource(R.string.Titre3),
+                 description = stringResource(R.string.Description3),
                  backgroundColor = Color(0xFFB69DF8),
                  modifier = Modifier.weight(1f),
              )
 
              Quadrant(
-                 titre = "Column composable",
-                 description = "A layout composable that places its children in a vertical sequence.",
+                 titre = stringResource(R.string.Titre4),
+                 description = stringResource(R.string.Description4),
                  backgroundColor = Color(0xFFF6EDFF),
                  modifier = Modifier.weight(1f)
              )
@@ -112,7 +110,7 @@ import com.example.quadrant_compose.ui.theme.Quadrant_ComposeTheme
  }
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun QuadrantPreview() {
     Quadrant_ComposeTheme {
         ComposeQuadrant()
     }
